@@ -134,14 +134,28 @@ $(document).ready(function() {
 
         numPage++;
         $('.reg__right-page.active').hide();
-        $('.reg__right-page[data-page="' + numPage + '"]').show();
+        $('.reg__right-page[data-page="' + numPage + '"]').css({display: 'flex'});
         $('.reg__right-page[data-page="' + numPage + '"]').addClass('active');
+        $('.reg__left-box--text.active').removeClass('active');
         $('.reg__left-box').each(function() {
             if($(this).children().html() == numPage){
                 $(this).addClass('active');
+                if($(window).width() < 960){
+                    $(this).children().next().addClass('active');
+                }
             }
         })
     })
+
+    $('.reg__left-box').each(function() {
+        if($(this).children().html() == numPage){
+            if($(window).width() < 960){
+                $(this).children().next().addClass('active');
+                console.log()
+            }
+        }
+    })
+
     
     //Слайдеры
     let slider = new Swiper('.slider', {
