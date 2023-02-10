@@ -7,7 +7,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
   <link href="https://fonts.googleapis.com/css2?family=Inter&amp;family=Montserrat:wght@400;500;600&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
-  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="shortcut icon" href="img/favi.svg" type="image/svg">
   <title>gamma</title>
@@ -98,38 +97,138 @@
       <div class="container">
         <div class="nav__inner"><a class="nav__item-link m" href="index.html">Главная</a>
           <p class="nav__item-now m">/</p>
-          <p class="nav__item-now m">Контакты</p>
+          <p class="nav__item-now m">Личный кабинет</p>
         </div>
       </div>
     </section>
-    <section class="about">
+    <section class="profile">
       <div class="container">
-        <div class="about__inner">
-          <div class="about__left">
-            <div class="about__left-inner"><a class="about__left-link fb" href="about.html">О компании</a>
-              <hr class="about__hr"><a class="about__left-link active fb" href="#">Контакты</a>
-              <hr class="about__hr">
+        <div class="profile__inner">
+          <div class="profile__left profile__block">
+            <div class="profile__block-top">
+              <div class="profile__names">
+                <p class="profile__name green fb">Профиль</p><a class="profile__name blue fb profile__name-link" href="">Поддержка</a>
+              </div><a class="profile__edit" href=""><img class="profile__edit-img" src="img/edit.svg" alt=""></a>
+            </div>
+            <div class="profile__profile"><img class="profile__img" src="img/profileImage.png" alt="">
+              <div class="profile__profile-right">
+                <div class="profile__box">
+                  <p class="profile__box-title fb">Имя</p>
+                  <p class="profile__box-desc fb">Екатерина</p>
+                </div>
+                <div class="profile__box">
+                  <p class="profile__box-title fb">Фамилия</p>
+                  <p class="profile__box-desc fb">Иванова</p>
+                </div>
+                <div class="profile__box">
+                  <p class="profile__box-title fb">Почта</p>
+                  <p class="profile__box-desc fb">Иванова@mail.ru</p>
+                </div>
+                <div class="profile__box">
+                  <p class="profile__box-title fb">Телефон</p>
+                  <p class="profile__box-desc fb">+7 900 900-90-90</p>
+                </div>
+              </div>
+            </div>
+            <div class="profile__line">
+              <div class="profile__box levelPrice">
+                <p class="profile__box-title fb bigMb">Уровень цен</p>
+                <p class="profile__box-desc fb">Розница</p>
+                <hr class="profile__box-hr">
+              </div>
+              <div class="profile__box discount">
+                <p class="profile__box-title fb bigMb">Скидка</p>
+                <p class="profile__box-desc fb">Персональная скидка: 4%</p>
+                <hr class="profile__box-hr">
+              </div>
+            </div>
+            <div class="profile__box">
+              <div class="profile__box-line">
+                <div class="profile__box-line--left">
+                  <p class="profile__box-title fb bigMb">Платежные данные</p>
+                  <p class="profile__box-desc fb">Карта: 5439 **** **** 5645</p>
+                </div><a class="profile__box-line--right" href=""><img class="profile__box-edit" src="img/edit.svg" alt=""></a>
+              </div>
+              <hr class="profile__box-hr">
             </div>
           </div>
-          <div class="about__right">
-            <div class="map">
-              <div class="map__inner">
-                <div class="map__left"><img class="map__map" src="img/map.png" alt=""></div>
-                <div class="map__right">
-                  <div class="map__box">
-                    <p class="map__box-title fb">Адрес магазина</p>
-                    <p class="map__box-desc gt">г. Орёл, ул Комсомольская 102</p>
-                  </div>
-                  <div class="map__box">
-                    <p class="map__box-title fb">Телефон</p>
-                    <p class="map__box-desc gt">+ 7 (900) 909-00-90</p>
-                  </div>
-                  <div class="map__box">
-                    <p class="map__box-title fb">График работы:</p>
-                    <p class="map__box-desc gt">Вт - Вс: с 10:00 до 19:30 </p>
-                    <p class="map__box-desc gt">Пн: <span>Выходной</span></p>
-                  </div>
-                </div>
+          <div class="profile__top profile__block">
+            <div class="profile__block-top">
+              <div class="profile__names">
+                <p class="profile__name yellow fb">История</p>
+              </div><a class="profile__showHis fb" href="history.html">Смотреть историю</a>
+            </div>
+            <div class="profile__order">
+              <div class="profile__order-box">
+                <p class="profile__order-title fb">Номер заказа</p>
+                <p class="profile__order-desc fb big">№84906405</p>
+              </div>
+              <div class="profile__order-box">
+                <p class="profile__order-title fb">Статус</p>
+                <p class="profile__order-desc fb">Доставлен</p>
+              </div>
+              <div class="profile__order-box">
+                <p class="profile__order-title fb">Стоимость</p>
+                <p class="profile__order-desc fb">849 Руб.</p>
+              </div>
+              <div class="profile__order-box">
+                <p class="profile__order-title fb">Дата</p>
+                <p class="profile__order-desc fb">08.01.2023</p>
+              </div>
+              <div class="profile__order-box bottom">
+                <p class="profile__order-title fb"></p><a class="profile__order-desc fb" href="order.html">Подробнее</a>
+              </div>
+            </div>
+            <div class="profile__order">
+              <div class="profile__order-box">
+                <p class="profile__order-title fb">Номер заказа</p>
+                <p class="profile__order-desc fb big">№84906405</p>
+              </div>
+              <div class="profile__order-box">
+                <p class="profile__order-title fb">Статус</p>
+                <p class="profile__order-desc fb">Отменен</p>
+              </div>
+              <div class="profile__order-box">
+                <p class="profile__order-title fb">Стоимость</p>
+                <p class="profile__order-desc fb">849 Руб.</p>
+              </div>
+              <div class="profile__order-box">
+                <p class="profile__order-title fb">Дата</p>
+                <p class="profile__order-desc fb">06.01.2023</p>
+              </div>
+              <div class="profile__order-box bottom">
+                <p class="profile__order-title fb"></p><a class="profile__order-desc fb" href="order.html">Подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="profile__bottom profile__block">
+            <div class="profile__block-top">
+              <div class="profile__names">
+                <p class="profile__name pink fb">Доставка</p>
+              </div>
+            </div>
+            <div class="profile__adress">
+              <label class="productTop__choiceColor-label" for="adress1">
+                <input class="productTop__choiceColor-radio" id="adress1" type="radio" checked name="adress" value="first">
+                <div class="productTop__choiceColor-chekboxLabel"></div>
+              </label>
+              <div class="profile__adress-right">
+                <div class="profile__adress-box">
+                  <p class="profile__adress-title m">Адрес доставки 1</p>
+                  <p class="profile__adress-adrs fb">Орел, ул. Комсомольская, д.102</p>
+                </div><a class="profile__adress-edit" href=""><img class="profile__adress-img" src="img/edit.svg" alt=""></a>
+              </div>
+            </div>
+            <div class="profile__adress">
+              <label class="productTop__choiceColor-label" for="adress2">
+                <input class="productTop__choiceColor-radio" id="adress2" type="radio" name="adress" value="second">
+                <div class="productTop__choiceColor-chekboxLabel"></div>
+              </label>
+              <div class="profile__adress-right">
+                <div class="profile__adress-box">
+                  <p class="profile__adress-title m">Адрес доставки 2</p>
+                  <p class="profile__adress-adrs fb">Орел, ул. Комсомольская, д.19</p>
+                </div><a class="profile__adress-edit" href=""><img class="profile__adress-img" src="img/edit.svg" alt=""></a>
               </div>
             </div>
           </div>
@@ -145,7 +244,7 @@
     <div class="footer__top"><img class="footer__top-background" src="img/backgroundTop.svg" alt="">
       <div class="container">
         <div class="footer__top-inner">
-          <div class="footer__top-column"><img class="footer__logo" src="img/logoBlack.svg" alt=""><a class="footer__top-button js-open-modal" href="" data-modal="subscribe">
+          <div class="footer__top-column"><img class="footer__logo" src="img/logoBlack.svg" alt=""><a class="footer__top-button" href="">
               <svg class="footer__top-button--calls" width="18" height="21" viewbox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M15 14V9.91304C14.9992 8.60739 14.5661 7.33875 13.7683 6.30521C12.9705 5.27167 11.8529 4.53142 10.59 4.20004C10.8162 3.90363 10.955 3.54992 10.9908 3.17881C11.0266 2.8077 10.9579 2.43397 10.7925 2.09981C10.6272 1.76565 10.3717 1.48436 10.055 1.2877C9.73824 1.09103 9.37283 0.986816 9 0.986816C8.62717 0.986816 8.26176 1.09103 7.94501 1.2877C7.62827 1.48436 7.37281 1.76565 7.20745 2.09981C7.0421 2.43397 6.97345 2.8077 7.00924 3.17881C7.04503 3.54992 7.18384 3.90363 7.41 4.20004C6.14711 4.53142 5.0295 5.27167 4.23169 6.30521C3.43387 7.33875 3.00077 8.60739 3 9.91304V14C3 14.7957 2.68393 15.5587 2.12132 16.1214C1.55871 16.684 0.795649 17 0 17V18H18V17C17.2044 17 16.4413 16.684 15.8787 16.1214C15.3161 15.5587 15 14.7957 15 14ZM9 2.00004C9.19778 2.00004 9.39112 2.05868 9.55557 2.16857C9.72002 2.27845 9.84819 2.43463 9.92388 2.61735C9.99957 2.80008 10.0194 3.00114 9.98079 3.19513C9.9422 3.38911 9.84696 3.56729 9.70711 3.70714C9.56725 3.84699 9.38907 3.94224 9.19509 3.98082C9.00111 4.01941 8.80004 3.9996 8.61732 3.92391C8.43459 3.84823 8.27841 3.72005 8.16853 3.55561C8.05865 3.39116 8 3.19782 8 3.00004C8.00027 2.7349 8.10571 2.4807 8.29319 2.29322C8.48066 2.10574 8.73487 2.0003 9 2.00004ZM2.643 17C3.06953 16.6252 3.4112 16.1638 3.64521 15.6465C3.87921 15.1291 4.00017 14.5678 4 14V9.91304C4.00159 8.61051 4.51972 7.3618 5.44074 6.44077C6.36176 5.51975 7.61048 5.00162 8.913 5.00004H9.087C10.3895 5.00162 11.6382 5.51975 12.5593 6.44077C13.4803 7.3618 13.9984 8.61051 14 9.91304V14C13.9998 14.5678 14.1208 15.1291 14.3548 15.6465C14.5888 16.1638 14.9305 16.6252 15.357 17H2.643ZM10 19H11C11 19.5305 10.7893 20.0392 10.4142 20.4142C10.0391 20.7893 9.53043 21 9 21C8.46957 21 7.96086 20.7893 7.58579 20.4142C7.21071 20.0392 7 19.5305 7 19H8C8 19.2653 8.10536 19.5196 8.29289 19.7071C8.48043 19.8947 8.73478 20 9 20C9.26522 20 9.51957 19.8947 9.70711 19.7071C9.89464 19.5196 10 19.2653 10 19Z" fill="white"></path>
               </svg>
@@ -226,62 +325,7 @@
       </div>
     </div>
   </footer>
-  <div class="modal__background active"></div>
-  <div class="modal" id="subscribe">
-    <div class="modal__inner">
-      <svg class="modal__close js-close-modal" width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect width="22.8626" height="2.14337" rx="1.07168" transform="matrix(0.704423 0.70978 -0.704423 0.70978 1.51172 0)" fill="#585858"></rect>
-        <rect width="22.8626" height="2.14337" rx="1.07168" transform="matrix(0.704423 -0.70978 0.704423 0.70978 0 16.2275)" fill="#585858"></rect>
-      </svg>
-      <p class="modal__title fb">Подписаться на рассылку</p>
-      <p class="modal__desc gt">Спасибо что следите за нами</p>
-      <form class="modal__form" action="">
-        <input class="modal__input" type="text" placeholder="Имя">
-        <input class="modal__input" type="text" placeholder="E-mail">
-        <button class="js-reOpen-modal modal__button fb" data-modal="subscribeThank">Подписаться </button>
-      </form>
-    </div>
-  </div>
-  <div class="modal" id="subscribeThank">
-    <div class="modal__inner center">
-      <p class="modal__title fb">Вы успешно подписались<br> на рассылку</p><a class="modal__button fb js-close-modal" href="index.html">На главную</a>
-    </div>
-  </div>
-  <div class="modal active" id="login">
-    <div class="modal__inner">
-      <svg class="modal__close js-close-modal" width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect width="22.8626" height="2.14337" rx="1.07168" transform="matrix(0.704423 0.70978 -0.704423 0.70978 1.51172 0)" fill="#585858"></rect>
-        <rect width="22.8626" height="2.14337" rx="1.07168" transform="matrix(0.704423 -0.70978 0.704423 0.70978 0 16.2275)" fill="#585858"></rect>
-      </svg>
-      <p class="modal__title fb">Вход</p>
-      <form class="modal__form" action="">
-        <div class="modal__input-wrapper error">
-          <input class="modal__input" type="text" placeholder="E-mail">
-          <p class="modal__error m">Данный e-mail не зарегестрирован</p>
-        </div>
-        <div class="modal__double">
-          <div class="modal__input-wrapper error">
-            <input class="modal__input" type="text" placeholder="Пароль">
-            <p class="modal__error m">Логин или пароль не верный</p>
-          </div>
-          <div class="modal__checkbox">
-            <label class="productTop__choiceColor-label" for="ss">
-              <input class="productTop__choiceColor-radio" id="ss" type="checkbox" value="yes" name="ss" checked>
-              <div class="productTop__choiceColor-chekboxLabel"></div>
-            </label>
-            <p class="basketBuy__checkbox-text fb">Запомнить пароль</p>
-          </div>
-        </div><a class="js-reOpen-modal modal__resetPass m" href="" data-modal="password">Не помню пароль</a>
-        <button class="modal__button">Далее</button>
-      </form><a class="modal__notAcc m" href="reg.html">
-         У меня нет аккаунта, хочу <span>зарегестрировать</span></a>
-      <div class="modal__line">
-        <p class="modal__authWith m">Войти с помощью: </p><img class="modal__img" src="img/socials.png" alt="">
-      </div>
-    </div>
-  </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"> </script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>

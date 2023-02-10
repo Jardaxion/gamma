@@ -96,40 +96,145 @@
   <main class="main">
     <section class="nav">
       <div class="container">
-        <div class="nav__inner"><a class="nav__item-link m" href="index.html">Главная</a>
-          <p class="nav__item-now m">/</p>
-          <p class="nav__item-now m">Контакты</p>
+        <div class="nav__inner jcsb">
+          <div class="nav__left"><a class="nav__item-link m" href="index.html">Главная</a>
+            <p class="nav__item-now m">/</p>
+            <p class="nav__item-now m">Личный кабинет</p>
+          </div><a class="nav__right" href=""><span class="nav__exit fb">Выход</span>
+            <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M1.46667 0C0.656641 0 0 0.656656 0 1.46667V17.6C0 18.41 0.656656 19.0667 1.46667 19.0667H12.4667C12.8716 19.0667 13.2 18.7383 13.2 18.3333C13.2 17.9284 12.8716 17.6 12.4667 17.6H1.46667V1.46667H12.4667C12.8716 1.46667 13.2 1.13834 13.2 0.733333C13.2 0.328328 12.8716 0 12.4667 0H1.46667ZM15.5519 5.71479C15.2655 5.4284 14.8012 5.4284 14.5147 5.71479C14.2284 6.00117 14.2284 6.46549 14.5147 6.75187L16.5629 8.8H6.6C6.19499 8.8 5.86667 9.12833 5.86667 9.53333C5.86667 9.93834 6.19499 10.2667 6.6 10.2667H16.5629L14.5147 12.3148C14.2284 12.6012 14.2284 13.0655 14.5147 13.3519C14.8012 13.6382 15.2655 13.6382 15.5519 13.3519L18.8519 10.0519C19.1382 9.76549 19.1382 9.30117 18.8519 9.01479L15.5519 5.71479Z" fill="#0072BB"></path>
+            </svg></a>
         </div>
       </div>
     </section>
-    <section class="about">
+    <section class="profile">
       <div class="container">
-        <div class="about__inner">
-          <div class="about__left">
-            <div class="about__left-inner"><a class="about__left-link fb" href="about.html">О компании</a>
-              <hr class="about__hr"><a class="about__left-link active fb" href="#">Контакты</a>
-              <hr class="about__hr">
+        <div class="profile__inner">
+          <div class="profile__left profile__block">
+            <div class="profile__block-top">
+              <div class="profile__names">
+                <p class="profile__name green fb">Профиль</p><a class="profile__name blue fb profile__name-link" href="">Поддержка</a>
+              </div><a class="profile__edit" href=""><img class="profile__edit-img" src="img/edit.svg" alt=""></a>
+            </div>
+            <div class="profile__profile"><img class="profile__img" src="img/profileImage.png" alt="">
+              <div class="profile__profile-right">
+                <div class="profile__box">
+                  <p class="profile__box-title fb">Имя</p>
+                  <p class="profile__box-desc fb">Екатерина</p>
+                </div>
+                <div class="profile__box">
+                  <p class="profile__box-title fb">Фамилия</p>
+                  <p class="profile__box-desc fb">Иванова</p>
+                </div>
+                <div class="profile__box">
+                  <p class="profile__box-title fb">Почта</p>
+                  <p class="profile__box-desc fb">Иванова@mail.ru</p>
+                </div>
+                <div class="profile__box">
+                  <p class="profile__box-title fb">Телефон</p>
+                  <p class="profile__box-desc fb">+7 900 900-90-90</p>
+                </div>
+              </div>
+            </div>
+            <div class="profile__line">
+              <div class="profile__box levelPrice">
+                <p class="profile__box-title fb bigMb">Уровень цен</p>
+                <p class="profile__box-desc fb">Розница</p>
+                <hr class="profile__box-hr">
+              </div>
+              <div class="profile__box discount">
+                <p class="profile__box-title fb bigMb">Скидка</p>
+                <p class="profile__box-desc fb">Персональная скидка: 4%</p>
+                <hr class="profile__box-hr">
+              </div>
+            </div>
+            <div class="profile__box">
+              <div class="profile__box-line">
+                <div class="profile__box-line--left">
+                  <p class="profile__box-title fb bigMb">Платежные данные</p>
+                  <p class="profile__box-desc fb">Карта: 5439 **** **** 5645</p>
+                </div><a class="profile__box-line--right" href=""><img class="profile__box-edit" src="img/edit.svg" alt=""></a>
+              </div>
+              <hr class="profile__box-hr">
             </div>
           </div>
-          <div class="about__right">
-            <div class="map">
-              <div class="map__inner">
-                <div class="map__left"><img class="map__map" src="img/map.png" alt=""></div>
-                <div class="map__right">
-                  <div class="map__box">
-                    <p class="map__box-title fb">Адрес магазина</p>
-                    <p class="map__box-desc gt">г. Орёл, ул Комсомольская 102</p>
-                  </div>
-                  <div class="map__box">
-                    <p class="map__box-title fb">Телефон</p>
-                    <p class="map__box-desc gt">+ 7 (900) 909-00-90</p>
-                  </div>
-                  <div class="map__box">
-                    <p class="map__box-title fb">График работы:</p>
-                    <p class="map__box-desc gt">Вт - Вс: с 10:00 до 19:30 </p>
-                    <p class="map__box-desc gt">Пн: <span>Выходной</span></p>
-                  </div>
-                </div>
+          <div class="profile__top profile__block">
+            <div class="profile__block-top">
+              <div class="profile__names">
+                <p class="profile__name yellow fb">История</p>
+              </div><a class="profile__showHis fb" href="history.html">Смотреть историю</a>
+            </div>
+            <div class="profile__order">
+              <div class="profile__order-box">
+                <p class="profile__order-title fb">Номер заказа</p>
+                <p class="profile__order-desc fb big">№84906405</p>
+              </div>
+              <div class="profile__order-box">
+                <p class="profile__order-title fb">Статус</p>
+                <p class="profile__order-desc fb">Доставлен</p>
+              </div>
+              <div class="profile__order-box">
+                <p class="profile__order-title fb">Стоимость</p>
+                <p class="profile__order-desc fb">849 Руб.</p>
+              </div>
+              <div class="profile__order-box">
+                <p class="profile__order-title fb">Дата</p>
+                <p class="profile__order-desc fb">08.01.2023</p>
+              </div>
+              <div class="profile__order-box bottom">
+                <p class="profile__order-title fb"></p><a class="profile__order-desc fb" href="order.html">Подробнее</a>
+              </div>
+            </div>
+            <div class="profile__order">
+              <div class="profile__order-box">
+                <p class="profile__order-title fb">Номер заказа</p>
+                <p class="profile__order-desc fb big">№84906405</p>
+              </div>
+              <div class="profile__order-box">
+                <p class="profile__order-title fb">Статус</p>
+                <p class="profile__order-desc fb">Отменен</p>
+              </div>
+              <div class="profile__order-box">
+                <p class="profile__order-title fb">Стоимость</p>
+                <p class="profile__order-desc fb">849 Руб.</p>
+              </div>
+              <div class="profile__order-box">
+                <p class="profile__order-title fb">Дата</p>
+                <p class="profile__order-desc fb">06.01.2023</p>
+              </div>
+              <div class="profile__order-box bottom">
+                <p class="profile__order-title fb"></p><a class="profile__order-desc fb" href="order.html">Подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="profile__bottom profile__block">
+            <div class="profile__block-top">
+              <div class="profile__names">
+                <p class="profile__name pink fb">Доставка</p>
+              </div>
+            </div>
+            <div class="profile__adress">
+              <label class="productTop__choiceColor-label" for="adress1">
+                <input class="productTop__choiceColor-radio" id="adress1" type="radio" checked name="adress" value="first">
+                <div class="productTop__choiceColor-chekboxLabel"></div>
+              </label>
+              <div class="profile__adress-right">
+                <div class="profile__adress-box">
+                  <p class="profile__adress-title m">Адрес доставки 1</p>
+                  <p class="profile__adress-adrs fb">Орел, ул. Комсомольская, д.102</p>
+                </div><a class="profile__adress-edit" href=""><img class="profile__adress-img" src="img/edit.svg" alt=""></a>
+              </div>
+            </div>
+            <div class="profile__adress">
+              <label class="productTop__choiceColor-label" for="adress2">
+                <input class="productTop__choiceColor-radio" id="adress2" type="radio" name="adress" value="second">
+                <div class="productTop__choiceColor-chekboxLabel"></div>
+              </label>
+              <div class="profile__adress-right">
+                <div class="profile__adress-box">
+                  <p class="profile__adress-title m">Адрес доставки 2</p>
+                  <p class="profile__adress-adrs fb">Орел, ул. Комсомольская, д.19</p>
+                </div><a class="profile__adress-edit" href=""><img class="profile__adress-img" src="img/edit.svg" alt=""></a>
               </div>
             </div>
           </div>

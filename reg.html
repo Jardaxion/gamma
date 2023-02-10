@@ -94,45 +94,131 @@
     </div>
   </header>
   <main class="main">
-    <section class="nav">
+    <section class="reg">
+      <svg class="reg__leftArrow" width="158" height="468" viewbox="0 0 158 468" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M-0.677599 464.5C130.219 435.5 178.218 251.5 143.719 131.5C123.02 59.5001 58.415 -49.3435 -0.676111 32.7574" stroke="#70B852" stroke-width="6"></path>
+      </svg>
+      <svg class="reg__rightArrow" width="150" height="653" viewbox="0 0 150 653" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M686.304 567.555C663.465 582.01 459.781 706.425 245.477 617.961C231.464 612.178 31.7035 526.5 6.1676 358.345C-23.8461 160.678 191.703 -119.122 567.662 -219.535" stroke="#0072BB" stroke-width="6"></path>
+      </svg>
       <div class="container">
-        <div class="nav__inner"><a class="nav__item-link m" href="index.html">Главная</a>
-          <p class="nav__item-now m">/</p>
-          <p class="nav__item-now m">Контакты</p>
-        </div>
-      </div>
-    </section>
-    <section class="about">
-      <div class="container">
-        <div class="about__inner">
-          <div class="about__left">
-            <div class="about__left-inner"><a class="about__left-link fb" href="about.html">О компании</a>
-              <hr class="about__hr"><a class="about__left-link active fb" href="#">Контакты</a>
-              <hr class="about__hr">
+        <div class="reg__inner">
+          <div class="reg__left">
+            <div class="reg__left-box active">
+              <p class="reg__left-box--num gt">1</p>
+              <p class="reg__left-box--text gt">Клиент</p>
+            </div>
+            <div class="reg__left-box">
+              <p class="reg__left-box--num gt">2</p>
+              <p class="reg__left-box--text gt">Общие данные</p>
+            </div>
+            <div class="reg__left-box">
+              <p class="reg__left-box--num gt">3</p>
+              <p class="reg__left-box--text gt">Регистрация</p>
             </div>
           </div>
-          <div class="about__right">
-            <div class="map">
-              <div class="map__inner">
-                <div class="map__left"><img class="map__map" src="img/map.png" alt=""></div>
-                <div class="map__right">
-                  <div class="map__box">
-                    <p class="map__box-title fb">Адрес магазина</p>
-                    <p class="map__box-desc gt">г. Орёл, ул Комсомольская 102</p>
+          <form class="reg__right">
+            <div class="reg__right-page active" data-page="1">
+              <p class="reg__right-title fb">Регистрация</p>
+              <p class="reg__right-desc m">Выберите тип работы для аккаунта</p>
+              <div class="reg__choiceType">
+                <label for="type1">
+                  <input id="type1" type="radio" name="type" value="opt" checked>
+                  <div class="reg__choiceType-choice"><img class="reg__choiceType-img" src="img/type/opt.png" alt="">
+                    <div class="reg__choiceType-effect"></div>
+                    <p class="reg__choiceType-text fb">Оптовый покупатель</p>
                   </div>
-                  <div class="map__box">
-                    <p class="map__box-title fb">Телефон</p>
-                    <p class="map__box-desc gt">+ 7 (900) 909-00-90</p>
+                </label>
+                <label for="type2">
+                  <input id="type2" type="radio" name="type" value="raoz">
+                  <div class="reg__choiceType-choice"><img class="reg__choiceType-img" src="img/type/roz.png" alt="">
+                    <div class="reg__choiceType-effect"></div>
+                    <p class="reg__choiceType-text fb">Розничный покупатель</p>
                   </div>
-                  <div class="map__box">
-                    <p class="map__box-title fb">График работы:</p>
-                    <p class="map__box-desc gt">Вт - Вс: с 10:00 до 19:30 </p>
-                    <p class="map__box-desc gt">Пн: <span>Выходной</span></p>
-                  </div>
+                </label>
+              </div>
+              <button class="js-next reg__but fb">Далее</button><a class="js-open-modal reg__haveAcc m" href="" data-modal="login">У меня уже есть аккаунт, хочу <span>войти</span></a>
+            </div>
+            <div class="reg__right-page" data-page="2">
+              <p class="reg__right-title fb">Регистрация </p>
+              <div class="reg__input-wrapper">
+                <div class="reg__input-left">
+                  <svg class="error" width="13" height="13" viewbox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="6.5" cy="6.5" r="5.5" stroke="#E6007E" stroke-width="2"></circle>
+                  </svg>
+                  <svg class="success" width="13" height="9" viewbox="0 0 13 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 4L5 8L12 1" stroke="#35D863" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+                <div class="reg__input-right">
+                  <input class="reg__input gt" type="text" placeholder="Фамилия Имя Отчество *">
+                  <p class="reg__input-error m">Ошибка</p>
                 </div>
               </div>
+              <div class="reg__input-wrapper error">
+                <div class="reg__input-left">
+                  <svg class="error" width="13" height="13" viewbox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="6.5" cy="6.5" r="5.5" stroke="#E6007E" stroke-width="2"></circle>
+                  </svg>
+                  <svg class="success" width="13" height="9" viewbox="0 0 13 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 4L5 8L12 1" stroke="#35D863" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+                <div class="reg__input-right">
+                  <input class="reg__input gt" type="text" placeholder="Email *">
+                  <p class="reg__input-error m">Данный e-mail уже занят</p>
+                </div>
+              </div>
+              <div class="reg__input-wrapper success">
+                <div class="reg__input-left">
+                  <svg class="error" width="13" height="13" viewbox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="6.5" cy="6.5" r="5.5" stroke="#E6007E" stroke-width="2"></circle>
+                  </svg>
+                  <svg class="success" width="13" height="9" viewbox="0 0 13 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 4L5 8L12 1" stroke="#35D863" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+                <div class="reg__input-right">
+                  <input class="reg__input gt" type="text" placeholder="Телефон">
+                  <p class="reg__input-error m">Данный e-mail уже занят</p>
+                </div>
+              </div>
+              <div class="reg__input-wrapper success showError">
+                <div class="reg__input-left">
+                  <svg class="error" width="13" height="13" viewbox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="6.5" cy="6.5" r="5.5" stroke="#E6007E" stroke-width="2"></circle>
+                  </svg>
+                  <svg class="success" width="13" height="9" viewbox="0 0 13 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 4L5 8L12 1" stroke="#35D863" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+                <div class="reg__input-right">
+                  <input class="reg__input gt" type="password" placeholder="Пароль">
+                  <p class="reg__input-error m">Пароль должен содержать минимум 6 слов</p>
+                </div>
+              </div>
+              <div class="reg__input-wrapper success">
+                <div class="reg__input-left">
+                  <svg class="error" width="13" height="13" viewbox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="6.5" cy="6.5" r="5.5" stroke="#E6007E" stroke-width="2"></circle>
+                  </svg>
+                  <svg class="success" width="13" height="9" viewbox="0 0 13 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 4L5 8L12 1" stroke="#35D863" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+                <div class="reg__input-right">
+                  <input class="reg__input gt" type="password" placeholder="Повторите пароль">
+                  <p class="reg__input-error m">Пароль должен содержать минимум 6 слов</p>
+                </div>
+              </div>
+              <p class="reg__success m">Нажимая продолжить вы соглашаетесь с “<a href="polit.html">политика<br> конфиденциальности</a>” и “<a href="polit.html">пользовательским соглашением</a>”</p>
+              <button class="js-next reg__but fb">Далее</button><a class="js-open-modal reg__haveAcc m" href="" data-modal="login">У меня уже есть аккаунт, хочу <span>войти</span></a>
             </div>
-          </div>
+            <div class="reg__right-page mt" data-page="3">
+              <p class="reg__right-title fb bigMb">Регистрация</p>
+              <p class="reg__right-thanks fb">Ваш аккаунт успешно зарегистрирован! <br><br>Спасибо!</p><a class="reg__but fb" href="profile.html">В личный кабинет</a><a class="reg__but blue fb" href="index.html">К покупкам</a>
+            </div>
+          </form>
         </div>
       </div>
     </section>

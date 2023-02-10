@@ -110,6 +110,184 @@
           <div class="catalog__filters">
             <div class="catalog__filter"> 
               <div class="catalog__filter-choice">
+                <p class="catalog__filter-choice--text fb">Фильтры</p>
+                <svg class="catalog__filter-choice--arrow" width="12" height="7" viewbox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L6 6L11 1" stroke="#0072BB" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div>
+              <div class="catalog__filter-menu--wrapper">
+                <div class="catalog__filterMenu">
+                  <div class="catalog__filterMenu-box">
+                    <div class="catalog__filterMenu-box--flexLine js-openClose-filter">
+                      <p class="catalog__filterMenu-box--title fb">Тип товара</p>
+                      <div class="catalog__filterMenu-box--closeOpen">
+                        <div class="catalog__filterMenu-box--closeOpen-line"></div>
+                        <div class="catalog__filterMenu-box--closeOpen-line"></div>
+                      </div>
+                    </div>
+                    <div class="catalog__filterMenu-box--inner">
+                      <div class="catalog__filterMenu-box--inside grid">
+                        <div class="productTop__choiceColor-line">
+                          <label class="productTop__choiceColor-label" for="socks">
+                            <input class="productTop__choiceColor-radio" id="socks" type="checkbox" value="socks">
+                            <div class="productTop__choiceColor-chekboxLabel"></div>
+                          </label>
+                          <p class="productTop__choiceColor-text fb">Носки</p>
+                        </div>
+                        <div class="productTop__choiceColor-line">
+                          <label class="productTop__choiceColor-label" for="socks1">
+                            <input class="productTop__choiceColor-radio" id="socks1" type="checkbox" value="socks1">
+                            <div class="productTop__choiceColor-chekboxLabel"></div>
+                          </label>
+                          <p class="productTop__choiceColor-text fb">Носки</p>
+                        </div>
+                        <div class="productTop__choiceColor-line">
+                          <label class="productTop__choiceColor-label" for="col">
+                            <input class="productTop__choiceColor-radio" id="col" type="checkbox" value="col">
+                            <div class="productTop__choiceColor-chekboxLabel"></div>
+                          </label>
+                          <p class="productTop__choiceColor-text fb">Колготки</p>
+                        </div>
+                        <div class="productTop__choiceColor-line">
+                          <label class="productTop__choiceColor-label" for="col1">
+                            <input class="productTop__choiceColor-radio" id="col1" type="checkbox" value="col1">
+                            <div class="productTop__choiceColor-chekboxLabel"></div>
+                          </label>
+                          <p class="productTop__choiceColor-text fb">Колготки</p>
+                        </div>
+                        <div class="productTop__choiceColor-line">
+                          <label class="productTop__choiceColor-label" for="golf">
+                            <input class="productTop__choiceColor-radio" id="golf" type="checkbox" value="golf">
+                            <div class="productTop__choiceColor-chekboxLabel"></div>
+                          </label>
+                          <p class="productTop__choiceColor-text fb">Гольфы</p>
+                        </div>
+                        <div class="productTop__choiceColor-line">
+                          <label class="productTop__choiceColor-label" for="golf1">
+                            <input class="productTop__choiceColor-radio" id="golf1" type="checkbox" value="golf1">
+                            <div class="productTop__choiceColor-chekboxLabel"></div>
+                          </label>
+                          <p class="productTop__choiceColor-text fb">Гольфы</p>
+                        </div>
+                      </div>
+                    </div>
+                    <hr class="catalog__filterMenu-box--hr">
+                  </div>
+                  <div class="catalog__filterMenu-box">
+                    <div class="catalog__filterMenu-box--flexLine js-openClose-filter">
+                      <p class="catalog__filterMenu-box--title fb">Стоимость</p>
+                      <div class="catalog__filterMenu-box--closeOpen">
+                        <div class="catalog__filterMenu-box--closeOpen-line"></div>
+                        <div class="catalog__filterMenu-box--closeOpen-line"></div>
+                      </div>
+                    </div>
+                    <div class="catalog__filterMenu-box--inner">
+                      <div class="catalog__filterMenu-box--inside">
+                        <div id="slider-range" data-min="3990" data-max="233990"></div>
+                        <div class="catalog__filterMenu-box--minMax">
+                          <p class="catalog__filterMenu-box--minMaxBlock min"></p>
+                          <p class="catalog__filterMenu-box--minMaxBlock max"></p>
+                        </div>
+                      </div>
+                    </div>
+                    <hr class="catalog__filterMenu-box--hr">
+                  </div>
+                  <div class="catalog__filterMenu-box">
+                    <div class="catalog__filterMenu-box--flexLine js-openClose-filter">
+                      <p class="catalog__filterMenu-box--title fb">Коллекция</p>
+                      <div class="catalog__filterMenu-box--closeOpen">
+                        <div class="catalog__filterMenu-box--closeOpen-line"></div>
+                        <div class="catalog__filterMenu-box--closeOpen-line"></div>
+                      </div>
+                    </div>
+                    <div class="catalog__filterMenu-box--inner">
+                      <div class="catalog__filterMenu-box--inside">
+                        <div class="productTop__choiceColor-line">
+                          <label class="productTop__choiceColor-label" for="zima">
+                            <input class="productTop__choiceColor-radio" id="zima" type="checkbox" value="zima">
+                            <div class="productTop__choiceColor-chekboxLabel"></div>
+                          </label>
+                          <p class="productTop__choiceColor-text fb">Зима</p>
+                        </div>
+                        <div class="productTop__choiceColor-line">
+                          <label class="productTop__choiceColor-label" for="detskie">
+                            <input class="productTop__choiceColor-radio" id="detskie" type="checkbox" value="detskie">
+                            <div class="productTop__choiceColor-chekboxLabel"></div>
+                          </label>
+                          <p class="productTop__choiceColor-text fb">Детские</p>
+                        </div>
+                        <div class="productTop__choiceColor-line">
+                          <label class="productTop__choiceColor-label" for="leto">
+                            <input class="productTop__choiceColor-radio" id="leto" type="checkbox" value="leto">
+                            <div class="productTop__choiceColor-chekboxLabel"></div>
+                          </label>
+                          <p class="productTop__choiceColor-text fb">Лето</p>
+                        </div>
+                      </div>
+                    </div>
+                    <hr class="catalog__filterMenu-box--hr">
+                  </div>
+                  <div class="catalog__filterMenu-box">
+                    <div class="catalog__filterMenu-box--flexLine js-openClose-filter">
+                      <p class="catalog__filterMenu-box--title fb">Размер</p>
+                      <div class="catalog__filterMenu-box--closeOpen">
+                        <div class="catalog__filterMenu-box--closeOpen-line"></div>
+                        <div class="catalog__filterMenu-box--closeOpen-line"></div>
+                      </div>
+                    </div>
+                    <div class="catalog__filterMenu-box--inner">
+                      <div class="catalog__filterMenu-box--inside">
+                        <div class="productTop__choiceColor-line">
+                          <label class="productTop__choiceColor-label" for="size1">
+                            <input class="productTop__choiceColor-radio" id="size1" type="checkbox" value="size1">
+                            <div class="productTop__choiceColor-chekboxLabel"></div>
+                          </label>
+                          <p class="productTop__choiceColor-text fb">27</p>
+                        </div>
+                        <div class="productTop__choiceColor-line">
+                          <label class="productTop__choiceColor-label" for="size2">
+                            <input class="productTop__choiceColor-radio" id="size2" type="checkbox" value="size2">
+                            <div class="productTop__choiceColor-chekboxLabel"></div>
+                          </label>
+                          <p class="productTop__choiceColor-text fb">29</p>
+                        </div>
+                      </div>
+                    </div>
+                    <hr class="catalog__filterMenu-box--hr">
+                  </div>
+                  <div class="catalog__filterMenu-box">
+                    <div class="catalog__filterMenu-box--flexLine js-openClose-filter">
+                      <p class="catalog__filterMenu-box--title fb">Состав</p>
+                      <div class="catalog__filterMenu-box--closeOpen">
+                        <div class="catalog__filterMenu-box--closeOpen-line"></div>
+                        <div class="catalog__filterMenu-box--closeOpen-line"></div>
+                      </div>
+                    </div>
+                    <div class="catalog__filterMenu-box--inner">
+                      <div class="catalog__filterMenu-box--inside">
+                        <div class="productTop__choiceColor-line">
+                          <label class="productTop__choiceColor-label" for="sostav1">
+                            <input class="productTop__choiceColor-radio" id="sostav1" type="checkbox" value="sostav1">
+                            <div class="productTop__choiceColor-chekboxLabel"></div>
+                          </label>
+                          <p class="productTop__choiceColor-text fb">Хлопок</p>
+                        </div>
+                        <div class="productTop__choiceColor-line">
+                          <label class="productTop__choiceColor-label" for="sostav2">
+                            <input class="productTop__choiceColor-radio" id="sostav2" type="checkbox" value="sostav2">
+                            <div class="productTop__choiceColor-chekboxLabel"></div>
+                          </label>
+                          <p class="productTop__choiceColor-text fb">Гипоаллергенный</p>
+                        </div>
+                      </div>
+                    </div>
+                    <hr class="catalog__filterMenu-box--hr">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="catalog__filter"> 
+              <div class="catalog__filter-choice">
                 <p class="catalog__filter-choice--text fb">Размер:</p>
                 <p class="catalog__filter-choice--text fb">27</p>
                 <svg class="catalog__filter-choice--arrow" width="12" height="7" viewbox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
