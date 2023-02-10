@@ -5106,6 +5106,10 @@ a.reg__but.blue:hover
     {
         display: none;
     }
+    .header__top
+    {
+        padding-right: 10px;
+    }
     .header__top-left ul
     {
         display: none;
@@ -5243,7 +5247,7 @@ a.reg__but.blue:hover
             flex-direction: column;
 
         width: 46px;
-        margin-left: 37px;
+        margin-left: 16px;
 
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -5462,6 +5466,12 @@ a.reg__but.blue:hover
         grid-template-columns: repeat(2, 1fr);
         gap: 35px;
     }
+    .choice__text
+    {
+        font-size: 13px;
+
+        padding: 5px 26px;
+    }
     .popular svg
     {
         display: none;
@@ -5522,6 +5532,39 @@ a.reg__but.blue:hover
         line-height: 51px;
 
         color: white;
+    }
+    .about__inner
+    {
+            flex-direction: column;
+
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+    }
+    .about > svg
+    {
+        display: none;
+    }
+    .about__left
+    {
+        max-width: none;
+    }
+    .about__left-inner
+    {
+        position: none;
+    }
+    .about__imgTitle
+    {
+        margin-bottom: 0;
+    }
+    .about__box-title
+    {
+        font-size: 15px;
+    }
+    .about__box-desc
+    {
+        font-size: 12px;
+        line-height: 20px;
     }
     .map svg
     {
@@ -5908,6 +5951,10 @@ a.reg__but.blue:hover
         grid-row-start: auto;
         grid-row-end: auto;
     }
+    .profile__name
+    {
+        padding: 13px 31px;
+    }
     .profile__profile
     {
         position: relative;
@@ -5991,7 +6038,7 @@ a.reg__but.blue:hover
         overflow: visible;
 
         height: auto;
-        padding: 30px 15px 0;
+        padding: 30px 15px;
     }
     .history__top
     {
@@ -6048,6 +6095,10 @@ a.reg__but.blue:hover
 
         grid-template-columns: repeat(2, 1fr);
         gap: 35px;
+    }
+    .FAQ
+    {
+        margin-top: 30px;
     }
     .FAQ > svg
     {
@@ -6128,6 +6179,8 @@ a.reg__but.blue:hover
     .reg__right-thanks
     {
         width: 100%;
+
+        text-align: center;
     }
     .reg__success
     {
@@ -6322,6 +6375,10 @@ a.reg__but.blue:hover
     .footer__top
     {
         padding-top: 6px;
+    }
+    .footer__top-inner
+    {
+        padding-top: 112px;
     }
     .footer__bottom
     {
