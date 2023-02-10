@@ -4969,7 +4969,7 @@ a.reg__but.blue:hover
     {
         display: none;
     }
-    .notJust__left img
+    .notJust__left > img
     {
         display: none;
     }
