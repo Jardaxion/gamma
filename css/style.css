@@ -3893,6 +3893,10 @@ input::placeholder
     -ms-flex-align: center;
     align-items: center;
 }
+.basketBuy__bottom-left.mb
+{
+    margin: 20px 0 30px;
+}
 .basketBuy__bottom-right
 {
     display: -webkit-box;
