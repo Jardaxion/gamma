@@ -242,7 +242,7 @@ body.noScroll
 main
 {
     min-height: 46.4vh;
-    padding-top: 139px;
+    padding-top: 97px;
 }
 
 .container
@@ -1340,7 +1340,15 @@ input::placeholder
 }
 .header__search
 {
-    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    margin-right: 43px;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 .header__search input
 {
@@ -1348,7 +1356,8 @@ input::placeholder
     font-size: 18px;
     font-weight: 200;
 
-    width: 250px;
+    width: 80px;
+    margin-right: 20px;
 }
 .header__search input::-webkit-input-placeholder
 {
@@ -1380,20 +1389,9 @@ input::placeholder
     font-size: 18px;
     font-weight: 200;
 }
-.header__search-icon
-{
-    position: absolute;
-    top: 50%;
-    right: 15px;
-    bottom: 0;
-
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
-}
 .header__fav
 {
-    margin-left: 18px;
+    margin-left: 42px;
 }
 .header__fav path
 {
@@ -1595,6 +1593,28 @@ input::placeholder
     margin-top: 17px;
 
     color: #4c4e4f;
+}
+.header__button
+{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+
+    padding: 9px 45px 8px;
+
+    -webkit-transition: .3s ease all;
+         -o-transition: .3s ease all;
+            transition: .3s ease all;
+    letter-spacing: .045em;
+
+    color: white;
+    background: #2e2d2e;
+    -webkit-box-shadow: 0 1px 25px 0 rgba(13, 41, 56, .0196078431);
+            box-shadow: 0 1px 25px 0 rgba(13, 41, 56, .0196078431);
+}
+.header__button:hover
+{
+    background: #0072bb;
 }
 
 /* Оснвоное */
@@ -5122,6 +5142,8 @@ a.reg__but.blue:hover
 
     width: 547px;
     height: auto;
+
+    pointer-events: none;
 }
 .footer__line2
 {
@@ -5129,6 +5151,8 @@ a.reg__but.blue:hover
     z-index: 5;
     right: 0;
     bottom: 246px;
+
+    pointer-events: none;
 }
 .footer__top
 {
@@ -5401,6 +5425,26 @@ a.reg__but.blue:hover
 }
 
 /* Адаптация */
+@media (max-width: 1600px)
+{
+    .footer__line1
+    {
+        left: -128px;
+
+        height: auto;
+    }
+}
+@media (max-width: 1440px)
+{
+    .footer__line1
+    {
+        left: -210px;
+    }
+    .footer__line2
+    {
+        right: -107px;
+    }
+}
 @media (max-width: 1400px)
 {
     .footer__line1

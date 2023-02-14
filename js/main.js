@@ -69,14 +69,11 @@ $(document).ready(function() {
         $(this).next().toggle();
     })
 
-    //Сокрытие/показ нижней части хедера при скорлле
-    $(window).on('scroll', function() {
-        if($(window).scrollTop() > 0) {
-            $('.header__bottom').addClass('disactive');
-        } else {
-            $('.header__bottom').removeClass('disactive');
+    $('.header').hover(() => {$('.header__bottom').removeClass('disactive')}, () => {
+        if(!$('.header__miniMenu').hasClass('active') && !$('.header__bigMenu').is(':visible')){
+            $('.header__bottom').addClass('disactive')
         }
-    })
+    });
 
     if($(window).scrollTop() > 0) {
         $('.header__bottom').addClass('disactive');
