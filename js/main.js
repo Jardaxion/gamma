@@ -188,13 +188,6 @@ $(document).ready(function() {
 
         new Swiper(sldr, {
             loop: true,
-            effect: 'fade',
-            fadeEffect: {
-                crossFade: true
-            },
-            autoplay: {
-                delay: 5000,
-            },
             navigation: {
                 nextEl: sldr + ' .swiper-button-next',
                 prevEl: sldr + ' .swiper-button-prev',
@@ -225,6 +218,7 @@ $(document).ready(function() {
         direction: 'horizontal',
         slidesPerView: 3,
         spaceBetween: 19,
+        autoHeight: true,
         breakpoints: {
             960: {
                 direction: 'vertical',

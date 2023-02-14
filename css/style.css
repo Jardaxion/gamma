@@ -411,6 +411,7 @@ main
 .modal__title
 {
     font-size: 32px;
+    font-weight: 400;
     line-height: 37px;
 
     margin-bottom: 35px;
@@ -422,6 +423,7 @@ main
 .modal__desc
 {
     font-size: 16px;
+    font-weight: 400;
     line-height: 16px;
 
     margin-bottom: 30px;
@@ -478,6 +480,7 @@ main
 .modal__error
 {
     font-size: 10px;
+    font-weight: 400;
     line-height: 15px;
 
     display: none;
@@ -506,6 +509,7 @@ main
 .modal__button
 {
     font-size: 16px;
+    font-weight: 400;
     line-height: 19px;
 
     display: -webkit-box;
@@ -538,6 +542,7 @@ main
 .modal__resetPass
 {
     font-size: 10px;
+    font-weight: 400;
     line-height: 15px;
 
     margin-top: 33px;
@@ -548,6 +553,7 @@ main
 .modal__notAcc
 {
     font-size: 15px;
+    font-weight: 400;
     line-height: 19px;
 
     display: block;
@@ -577,6 +583,7 @@ main
 .modal__authWith
 {
     font-size: 13px;
+    font-weight: 400;
     line-height: 16px;
 
     margin-right: 37px;
@@ -615,6 +622,7 @@ input
 {
     font-family: 'Montserrat';
     font-size: 13px;
+    font-weight: 400;
     line-height: 15px;
 
     padding: 15px 10px;
@@ -627,6 +635,7 @@ input::-webkit-input-placeholder
 {
     font-family: 'Montserrat';
     font-size: 13px;
+    font-weight: 400;
     line-height: 15px;
 
     color: #828282;
@@ -636,6 +645,7 @@ input::-moz-placeholder
 {
     font-family: 'Montserrat';
     font-size: 13px;
+    font-weight: 400;
     line-height: 15px;
 
     color: #828282;
@@ -645,6 +655,7 @@ input:-ms-input-placeholder
 {
     font-family: 'Montserrat';
     font-size: 13px;
+    font-weight: 400;
     line-height: 15px;
 
     color: #828282;
@@ -654,6 +665,7 @@ input::-ms-input-placeholder
 {
     font-family: 'Montserrat';
     font-size: 13px;
+    font-weight: 400;
     line-height: 15px;
 
     color: #828282;
@@ -663,6 +675,7 @@ input::placeholder
 {
     font-family: 'Montserrat';
     font-size: 13px;
+    font-weight: 400;
     line-height: 15px;
 
     color: #828282;
@@ -697,6 +710,7 @@ input::placeholder
 {
     font-family: 'FuturaBookC';
     font-size: 16px;
+    font-weight: 400;
     line-height: 19px;
 
     letter-spacing: .005em;
@@ -711,6 +725,12 @@ input::placeholder
 
     border: 1px solid #fafafa;
 }
+.productItem.noSlide .productItem__imgs-wrapper:hover .productItem__leftArrow,
+.productItem.noSlide .productItem__imgs-wrapper:hover .productItem__rightArrow,
+.productItem.noSlide .productItem__imgs-wrapper:hover .productItem__pagination
+{
+    opacity: 0;
+}
 .productItem__like
 {
     position: absolute;
@@ -719,6 +739,13 @@ input::placeholder
     right: 17px;
 
     cursor: pointer;
+    -webkit-transition: .3s ease all;
+         -o-transition: .3s ease all;
+            transition: .3s ease all;
+}
+.productItem__like:hover path
+{
+    fill: rgba(255, 255, 255, .5);
 }
 .productItem__like.liked path
 {
@@ -737,6 +764,7 @@ input::placeholder
 .productItem__tag
 {
     font-size: 14px;
+    font-weight: 400;
     line-height: 16px;
 
     position: absolute;
@@ -756,7 +784,10 @@ input::placeholder
 .productItem__img
 {
     max-width: 100%;
-    height: 424px;
+    height: 444px;
+
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 .productItem__leftArrow,
 .productItem__rightArrow
@@ -832,9 +863,13 @@ input::placeholder
 {
     margin-right: 8px;
 }
+.productItem__star:not(:last-of-type)
+{
+    margin-right: 3px;
+}
 .productItem__bottom
 {
-    padding: 13px 30px 25px;
+    padding: 15px 30px 25px;
 
     background: white;
 }
@@ -855,9 +890,14 @@ input::placeholder
 {
     margin-bottom: 17px;
 }
+.productItem__line:last-of-type
+{
+    margin-left: 2px;
+}
 .productItem__article
 {
     font-size: 14px;
+    font-weight: 400;
     line-height: 16px;
 
     color: #bcbcbc;
@@ -865,18 +905,22 @@ input::placeholder
 .productItem__title
 {
     font-size: 20px;
+    font-weight: 400;
     line-height: 24px;
 
     margin-bottom: 10px;
+    margin-left: 2px;
 
     color: #3e3e3e;
 }
 .productItem__isAviable
 {
     font-size: 17px;
+    font-weight: 400;
     line-height: 20px;
 
     margin-bottom: 12px;
+    margin-left: 2px;
 
     color: black;
 }
@@ -901,7 +945,7 @@ input::placeholder
 .productItem__price-price
 {
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 20px;
 
     margin-right: 7px;
@@ -911,16 +955,23 @@ input::placeholder
 .productItem__price-text
 {
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 14px;
 
+    margin-bottom: 1px;
+
     color: #3e3e3e;
+}
+.productItem__button
+{
+    padding: 11px 45px 9px !important;
 }
 
 /* Кнопка */
 .button
 {
     font-size: 14px;
+    font-weight: 400;
     line-height: 16px;
 
     padding: 9px 32px;
@@ -1053,6 +1104,7 @@ input::placeholder
 .header__top-link
 {
     font-size: 18px;
+    font-weight: 400;
     line-height: 23px;
 
     position: relative;
@@ -1136,6 +1188,10 @@ input::placeholder
 {
     background: #fecb2b;
 }
+.header__bottom-color.yellow + .container .header__bottom-link--wrapper a
+{
+    color: black;
+}
 .header__bottom-inner
 {
     display: -webkit-box;
@@ -1160,6 +1216,7 @@ input::placeholder
 .header__bottom-link
 {
     font-size: 18px;
+    font-weight: 400;
     line-height: 23px;
 
     color: white;
@@ -1170,6 +1227,12 @@ input::placeholder
 
     padding: 10px 16px;
 
+    -webkit-transition: .3s ease all;
+         -o-transition: .3s ease all;
+            transition: .3s ease all;
+}
+.header__bottom-link--wrapper a
+{
     -webkit-transition: .3s ease all;
          -o-transition: .3s ease all;
             transition: .3s ease all;
@@ -1233,6 +1296,7 @@ input::placeholder
 .header__bottom-right--link
 {
     font-size: 18px;
+    font-weight: 400;
     line-height: 23px;
 
     padding: 10px 50px;
@@ -1274,10 +1338,6 @@ input::placeholder
     display: -ms-flexbox;
     display: flex;
 }
-.header__logo
-{
-    margin-right: 63px;
-}
 .header__search
 {
     position: relative;
@@ -1286,6 +1346,7 @@ input::placeholder
 {
     font-family: 'FuturaBookC';
     font-size: 18px;
+    font-weight: 200;
 
     width: 250px;
 }
@@ -1293,26 +1354,31 @@ input::placeholder
 {
     font-family: 'FuturaBookC';
     font-size: 18px;
+    font-weight: 200;
 }
 .header__search input::-moz-placeholder
 {
     font-family: 'FuturaBookC';
     font-size: 18px;
+    font-weight: 200;
 }
 .header__search input:-ms-input-placeholder
 {
     font-family: 'FuturaBookC';
     font-size: 18px;
+    font-weight: 200;
 }
 .header__search input::-ms-input-placeholder
 {
     font-family: 'FuturaBookC';
     font-size: 18px;
+    font-weight: 200;
 }
 .header__search input::placeholder
 {
     font-family: 'FuturaBookC';
     font-size: 18px;
+    font-weight: 200;
 }
 .header__search-icon
 {
@@ -1455,6 +1521,7 @@ input::placeholder
 .header__miniMenu-link
 {
     font-size: 18px;
+    font-weight: 400;
     line-height: 23px;
 
     -webkit-transition: .3s ease all;
@@ -1503,6 +1570,7 @@ input::placeholder
 .header__bigMenu-title
 {
     font-size: 20px;
+    font-weight: 400;
     line-height: 25px;
 
     color: black;
@@ -1521,6 +1589,7 @@ input::placeholder
 .header__bigMenu-text
 {
     font-size: 18px;
+    font-weight: 400;
     line-height: 23px;
 
     margin-top: 17px;
@@ -1563,12 +1632,23 @@ input::placeholder
     -ms-flex-align: center;
     align-items: center;
 }
+.nav__right:hover .nav__exit
+{
+    -webkit-transform: translateX(-3px);
+        -ms-transform: translateX(-3px);
+            transform: translateX(-3px);
+}
 .nav__exit
 {
     font-size: 18px;
+    font-weight: 400;
     line-height: 23px;
 
     margin-right: 15px !important;
+
+    -webkit-transition: .3s ease all;
+         -o-transition: .3s ease all;
+            transition: .3s ease all;
 
     color: #161616;
 }
@@ -1577,6 +1657,7 @@ input::placeholder
 {
     font-family: 'FuturaBookC';
     font-size: 16px;
+    font-weight: 400;
     line-height: 14px;
 
     -webkit-transition: .3s ease all;
@@ -1689,6 +1770,7 @@ input::placeholder
 .notJust__desc
 {
     font-size: 18px;
+    font-weight: 400;
     line-height: 22px;
 
     color: black;
@@ -1707,6 +1789,7 @@ input::placeholder
 .notJust__item-text
 {
     font-size: 18px;
+    font-weight: 400;
     line-height: 21px;
 
     color: black;
@@ -1737,7 +1820,8 @@ input::placeholder
 {
     position: relative;
 }
-.choice__box *
+.choice__box img,
+.choice__box p
 {
     -webkit-transition: .3s ease all;
          -o-transition: .3s ease all;
@@ -1746,10 +1830,21 @@ input::placeholder
     -webkit-filter: grayscale(100%);
             filter: grayscale(100%);
 }
-.choice__box:hover *
+.choice__box svg
+{
+    -webkit-transition: .3s ease all;
+         -o-transition: .3s ease all;
+            transition: .3s ease all;
+}
+.choice__box:hover img,
+.choice__box:hover p
 {
     -webkit-filter: grayscale(0%);
             filter: grayscale(0%);
+}
+.choice__box:hover svg
+{
+    opacity: 0;
 }
 .choice__img
 {
@@ -1762,6 +1857,7 @@ input::placeholder
 .choice__text
 {
     font-size: 25px;
+    font-weight: 400;
     line-height: 25px;
 
     position: absolute;
@@ -1777,6 +1873,38 @@ input::placeholder
 
     color: white;
     background: #3c086a;
+}
+.choice__line
+{
+    position: absolute;
+    left: 0;
+
+    width: 100%;
+
+    -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+}
+.choice__first
+{
+    top: 61px;
+
+    height: 485px;
+}
+.choice__second
+{
+    bottom: 0;
+
+    height: 100%;
+}
+.choice__third
+{
+    top: 234px;
+}
+.choice__four
+{
+    top: 0;
+
+    height: 100%;
 }
 
 /* Популярное */
@@ -1819,6 +1947,7 @@ input::placeholder
 .popular__title
 {
     font-size: 32px;
+    font-weight: 400;
     line-height: 37px;
 
     letter-spacing: .045em;
@@ -1890,6 +2019,7 @@ input::placeholder
 .collection__desc
 {
     font-size: 14px;
+    font-weight: 400;
     line-height: 22px;
 
     margin-top: 23px;
@@ -1941,10 +2071,6 @@ input::placeholder
     max-width: 593px;
     margin-right: 92px;
 }
-.map__left *
-{
-    width: 100%;
-}
 .map__right
 {
     display: -webkit-box;
@@ -1962,6 +2088,7 @@ input::placeholder
 .map__box-title
 {
     font-size: 24px;
+    font-weight: 400;
     line-height: 28px;
 
     margin-bottom: 15px;
@@ -1973,6 +2100,7 @@ input::placeholder
 .map__box-desc
 {
     font-size: 22px;
+    font-weight: 400;
     line-height: 32px;
 
     color: #8e8e8e;
@@ -2021,6 +2149,7 @@ input::placeholder
 .FAQ__title
 {
     font-size: 32px;
+    font-weight: 400;
     line-height: 36px;
 
     margin-bottom: 60px;
@@ -2060,6 +2189,7 @@ input::placeholder
 .FAQ__question-title
 {
     font-size: 24px;
+    font-weight: 400;
     line-height: 30px;
 
     color: #5c5c5c;
@@ -2079,6 +2209,7 @@ input::placeholder
 .FAQ__desc-desc
 {
     font-size: 16px;
+    font-weight: 400;
     line-height: 25px;
 
     color: #5c5c5c;
@@ -2142,6 +2273,7 @@ input::placeholder
 .about__left-link
 {
     font-size: 18px;
+    font-weight: 400;
     line-height: 23px;
 
     margin-bottom: 24px;
@@ -2182,9 +2314,6 @@ input::placeholder
 {
     width: 100%;
     margin-bottom: 43px;
-
-    -o-object-fit: scale-down;
-       object-fit: scale-down;
 }
 .about__box:not(:last-of-type)
 {
@@ -2205,6 +2334,7 @@ input::placeholder
 .about__box-desc
 {
     font-size: 22px;
+    font-weight: 400;
     line-height: 35px;
 
     color: #5c5c5c;
@@ -2215,6 +2345,7 @@ input::placeholder
 .catalog__title
 {
     font-size: 32px;
+    font-weight: 400;
     line-height: 37px;
 
     margin-bottom: 32px;
@@ -2272,6 +2403,7 @@ input::placeholder
 .catalog__filter-choice--text
 {
     font-size: 18px;
+    font-weight: 400;
     line-height: 23px;
 
     margin-right: 5px;
@@ -2287,43 +2419,57 @@ input::placeholder
     width: 21px;
     height: 21px;
 
+    -webkit-transition: .3s ease all;
+         -o-transition: .3s ease all;
+            transition: .3s ease all;
+
+    border: 1px solid #e7e7e7;
     border-radius: 50%;
     background: black;
 }
 .catalog__filter-color.grey
 {
+    border-color: #b1c6a0;
     background: #b1c6a0;
 }
 .catalog__filter-color.purple
 {
+    border-color: #c6a0a0;
     background: #c6a0a0;
 }
 .catalog__filter-color.purpleWhite
 {
+    border-color: #a5a0c6;
     background: #a5a0c6;
 }
 .catalog__filter-color.blue
 {
+    border-color: #3cddf3;
     background: #3cddf3;
 }
 .catalog__filter-color.brown
 {
+    border-color: #98293d;
     background: #98293d;
 }
 .catalog__filter-color.yellow
 {
+    border-color: #fecb2b;
     background: #fecb2b;
 }
 .catalog__filter-color.whiteBlue
 {
+    border-color: #0072bb;
     background: #0072bb;
 }
 .catalog__filter-color.red
 {
+    border-color: #e44848;
     background: #e44848;
 }
 .catalog__filter-color.whiteWhiteBlue
 {
+    border-color: #3953dd;
     background: #3953dd;
 }
 .catalog__filter-menu
@@ -2351,15 +2497,29 @@ input::placeholder
 }
 .catalog__filter-menu.grid
 {
+    left: -30px;
+
     display: grid;
 
-    min-width: 128px;
-    padding: 22px 24px;
+    min-width: 140px;
+    padding: 22px 24px 22px 22px;
 
     background: white;
 
     grid-template-columns: repeat(3, 1fr);
     gap: 14px 11px;
+}
+.catalog__filter-menu.grid div:hover
+{
+    cursor: pointer;
+
+    border-color: #e7e7e7;
+}
+.catalog__filter-menu.grid div:nth-of-type(4),
+.catalog__filter-menu.grid div:nth-of-type(5),
+.catalog__filter-menu.grid div:nth-of-type(6)
+{
+    margin-bottom: 1px;
 }
 .catalog__filter-menu--wrapper
 {
@@ -2369,6 +2529,7 @@ input::placeholder
 {
     font-family: 'FuturaBookC';
     font-size: 18px;
+    font-weight: 400;
     line-height: 23px;
 
     position: relative;
@@ -2383,10 +2544,6 @@ input::placeholder
 
     color: #4c4e4f;
     background: white;
-}
-.catalog__filter-menu--item.active
-{
-    background: #f8f8f8;
 }
 .catalog__filter-menu--item:hover
 {
@@ -2450,6 +2607,7 @@ input::placeholder
 .catalog__filterMenu-box--title
 {
     font-size: 18px;
+    font-weight: 400;
     line-height: 23px;
 
     color: #4c4e4f;
@@ -2504,6 +2662,10 @@ input::placeholder
 {
     margin-bottom: 0;
 }
+.catalog__filterMenu-box--closeOpen.active div
+{
+    background: #0072bb;
+}
 .catalog__filterMenu-box--closeOpen.active div:last-of-type
 {
     opacity: 0;
@@ -2517,13 +2679,19 @@ input::placeholder
          -o-transition: .3s ease all;
             transition: .3s ease all;
 
-    background: #0072bb;
+    background: #70b852;
+}
+.catalog__filterMenu-box--closeOpen-line:first-of-type
+{
+    -webkit-transform: translateY(-1px);
+        -ms-transform: translateY(-1px);
+            transform: translateY(-1px);
 }
 .catalog__filterMenu-box--closeOpen-line:last-of-type
 {
-    -webkit-transform: translate(0px, 0px) rotate(90deg);
-        -ms-transform: translate(0px, 0px) rotate(90deg);
-            transform: translate(0px, 0px) rotate(90deg);
+    -webkit-transform: translateY(0) rotate(90deg);
+        -ms-transform: translateY(0) rotate(90deg);
+            transform: translateY(0) rotate(90deg);
 }
 .catalog__filterMenu-box--minMax
 {
@@ -2542,13 +2710,26 @@ input::placeholder
 {
     font-family: 'Montserrat';
     font-size: 12px;
+    font-weight: 400;
     line-height: 15px;
 
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    width: 101px;
     padding: 11px 29px;
 
     color: black;
     border-radius: 5px;
     background: #ebebeb;
+
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 .catalog .ui-state-default,
 .catalog .ui-widget-content .ui-state-default,
@@ -2559,6 +2740,10 @@ input::placeholder
 {
     width: 17px;
     height: 17px;
+
+    -webkit-transition: .3s ease all;
+         -o-transition: .3s ease all;
+            transition: .3s ease all;
 
     border: 3px solid #e4e4e4;
     border-radius: 50%;
@@ -2572,19 +2757,20 @@ input::placeholder
 
     border: 0;
 }
-.catalog .ui-state-focus
+.catalog .ui-state-focus,
+.catalog .ui-state-default:hover
 {
-    background: #fecb2b !important;
+    background: #c24747 !important;
 }
 .catalog .ui-slider-horizontal .ui-slider-range
 {
-    top: 4px;
+    top: 2px;
 }
 .catalog .ui-widget-header
 {
     height: 1px;
 
-    border: 1px solid #f2f2f2;
+    border: 1px solid #0072bb;
 }
 
 /* Пагинация */
@@ -2597,9 +2783,9 @@ input::placeholder
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: end;
 }
 .pagination__numbers
 {
@@ -2610,6 +2796,25 @@ input::placeholder
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: end;
+}
+.pagination__left,
+.pagination__right
+{
+    margin-bottom: 6px;
+
+    cursor: pointer;
+}
+.pagination__left path,
+.pagination__right path
+{
+    -webkit-transition: .3s ease all;
+         -o-transition: .3s ease all;
+            transition: .3s ease all;
+}
+.pagination__left:hover path,
+.pagination__right:hover path
+{
+    stroke: #70b852;
 }
 .pagination__left
 {
@@ -2623,6 +2828,7 @@ input::placeholder
 .pagination__dot
 {
     font-size: 20px;
+    font-weight: 400;
     line-height: 24px;
 
     margin-right: 8px;
@@ -2636,7 +2842,9 @@ input::placeholder
 .pagination__number.active
 {
     color: #70b852;
-} /* Избранное */
+}
+
+/* Избранное */
 .favorite__line
 {
     display: -webkit-box;
@@ -2653,6 +2861,7 @@ input::placeholder
 .favorite__title
 {
     font-size: 32px;
+    font-weight: 400;
     line-height: 37px;
 
     letter-spacing: .045em;
@@ -2662,6 +2871,7 @@ input::placeholder
 .favorite__clear
 {
     font-size: 18px;
+    font-weight: 400;
     line-height: 23px;
 
     text-decoration: underline;
@@ -2693,21 +2903,35 @@ input::placeholder
 
     width: 50%;
 }
+.productTop__left img
+{
+    -o-object-fit: cover;
+       object-fit: cover;
+}
 .productTop__left-left
 {
     width: 157px;
     margin-right: 8px;
 }
+.productTop__left-left img
+{
+    height: 156.333px !important;
+}
 .productTop__left-right
 {
-    width: 499px;
+    width: 515px;
 }
 .productTop__leftArrow,
 .productTop__rightArrow
 {
     -webkit-box-sizing: content-box;
             box-sizing: content-box;
+    margin-top: 0;
     padding: 46px 30px;
+
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
 
     background: rgba(217, 217, 217, .5294117647);
 
@@ -2784,6 +3008,7 @@ input::placeholder
 .productTop__title
 {
     font-size: 24px;
+    font-weight: 400;
     line-height: 28px;
 
     margin-right: 30px;
@@ -2795,6 +3020,16 @@ input::placeholder
 .productTop__like
 {
     cursor: pointer;
+}
+.productTop__like *
+{
+    -webkit-transition: .3s ease all;
+         -o-transition: .3s ease all;
+            transition: .3s ease all;
+}
+.productTop__like:hover *
+{
+    fill: #b7b7b7;
 }
 .productTop__like.liked *
 {
@@ -2809,6 +3044,7 @@ input::placeholder
 .productTop__article
 {
     font-size: 16px;
+    font-weight: 400;
     line-height: 19px;
 
     margin-bottom: 15px;
@@ -2826,6 +3062,7 @@ input::placeholder
 .productTop__isAviable
 {
     font-size: 17px;
+    font-weight: 400;
     line-height: 20px;
 
     margin-right: 30px;
@@ -2875,6 +3112,7 @@ input::placeholder
 .productTop__choiceColor-title
 {
     font-size: 18px;
+    font-weight: 400;
     line-height: 23px;
 
     margin-bottom: 22px;
@@ -2933,11 +3171,15 @@ input::placeholder
     content: '';
 
     background: url('../img/check.svg');
+    background-repeat: no-repeat;
 }
 .productTop__choiceColor-text
 {
     font-size: 18px;
+    font-weight: 400;
     line-height: 23px;
+
+    margin-top: 5px;
 
     color: #4c4e4f;
 }
@@ -2982,18 +3224,24 @@ input::placeholder
 .productTop__sizes-size
 {
     font-size: 14px;
+    font-weight: 400;
     line-height: 16px;
 
-    padding: 9px 30px;
+    padding: 9px 30px 6px;
 
     cursor: pointer;
     -webkit-transition: .3s ease all;
          -o-transition: .3s ease all;
             transition: .3s ease all;
+            transition: .3s ease all;
     letter-spacing: .045em;
 
     color: #222;
     background: #f0f0f0;
+}
+.productTop__sizes-size:hover
+{
+    background: #d7d7d7;
 }
 .productTop__number
 {
@@ -3013,15 +3261,40 @@ input::placeholder
 
     cursor: pointer;
 }
+.productTop__number-left path
+{
+    -webkit-transition: .3s ease all;
+         -o-transition: .3s ease all;
+            transition: .3s ease all;
+
+    stroke: rgb(222, 222, 222);
+}
+.productTop__number-left:hover path
+{
+    stroke: rgb(62, 62, 62);
+}
 .productTop__number-right
 {
     margin-left: 40px;
 
     cursor: pointer;
 }
+.productTop__number-right path
+{
+    -webkit-transition: .3s ease all;
+         -o-transition: .3s ease all;
+            transition: .3s ease all;
+
+    stroke: rgb(222, 222, 222);
+}
+.productTop__number-right:hover path
+{
+    stroke: rgb(62, 62, 62);
+}
 .productTop__number-number
 {
     font-size: 24px;
+    font-weight: 400;
     line-height: normal;
 
     color: #3f3f3f;
@@ -3029,6 +3302,7 @@ input::placeholder
 .productTop__button
 {
     font-size: 16px;
+    font-weight: 400;
     line-height: 19px;
 
     padding: 13px 40px;
@@ -3063,6 +3337,7 @@ input::placeholder
 .productBottom__choicePage
 {
     font-size: 25px;
+    font-weight: 400;
     line-height: 29px;
 
     -webkit-transition: .3s ease all;
@@ -3114,6 +3389,7 @@ input::placeholder
 .productBottom__page-desc
 {
     font-size: 16px;
+    font-weight: 400;
     line-height: 19px;
 
     margin-bottom: 24px;
@@ -3146,6 +3422,7 @@ input::placeholder
 .productBottom__right-text
 {
     font-size: 18px;
+    font-weight: 400;
     line-height: 23px;
 
     color: #4c4e4f;
@@ -3156,6 +3433,7 @@ input::placeholder
 .basket__title
 {
     font-size: 32px;
+    font-weight: 400;
     line-height: 37px;
 
     margin-bottom: 42px;
@@ -3175,6 +3453,7 @@ input::placeholder
 .basket__titleBlock-text
 {
     font-size: 14px;
+    font-weight: 400;
     line-height: 16px;
 
     color: #bbb;
@@ -3193,15 +3472,19 @@ input::placeholder
 }
 .basket__titleBlock-text.color
 {
-    margin-right: 106px;
+    margin-right: 108px;
+}
+.basket__titleBlock-text.size
+{
+    margin-right: 66px;
 }
 .basket__titleBlock-text.num
 {
-    margin-right: 79px;
+    margin-right: 84px;
 }
 .basket__titleBlock-text.price
 {
-    margin-right: 129px;
+    margin-right: 116px;
 }
 .basket__item
 {
@@ -3236,6 +3519,8 @@ input::placeholder
 }
 .basket__item-name
 {
+    position: relative;
+
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3243,14 +3528,19 @@ input::placeholder
 
     width: 100%;
     max-width: 280px;
+    height: 70px;
 
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 .basket__item-name--name
 {
     font-size: 14px;
+    font-weight: 400;
     line-height: 16px;
 
     color: #3f3f3f;
@@ -3258,9 +3548,12 @@ input::placeholder
 .basket__item-name--stock
 {
     font-size: 12px;
+    font-weight: 400;
     line-height: 14px;
 
-    margin-top: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 
     color: #27b03d;
 }
@@ -3280,20 +3573,24 @@ input::placeholder
 .basket__item-size
 {
     font-size: 18px;
+    font-weight: 400;
     line-height: 21px;
 
     width: 100%;
-    max-width: 100px;
+    max-width: 65px;
+    margin-top: 2px;
 
     color: #3f3f3f;
 }
 .basket__item-price
 {
     font-size: 22px;
+    font-weight: 400;
     line-height: 25px;
 
     width: 100%;
-    max-width: 137px;
+    max-width: 115px;
+    margin-left: 10px;
 
     color: #3f3f3f;
 }
@@ -3309,20 +3606,34 @@ input::placeholder
 }
 .basket .productTop__number-left
 {
-    margin-right: 30px;
+    margin-right: 44px;
 }
 .basket .productTop__number-right
 {
-    margin-left: 30px;
+    margin-left: 44px;
+}
+.basket .productTop__number-number
+{
+    font-size: 18px;
+    line-height: 21px;
+
+    margin-top: 2px;
+}
+.basket .productTop__choiceColor-text
+{
+    font-size: 14px;
+    line-height: 23px;
 }
 .basket__hr
 {
+    width: .4px;
     height: 100%;
     min-height: 71px;
     margin: 0;
     margin-right: 21px;
 
-    border: .4px solid #d7d7d7;
+    border: none;
+    background: #d7d7d7;
 }
 
 /* Форма товара */
@@ -3345,6 +3656,7 @@ input::placeholder
 .basketBuy__title
 {
     font-size: 32px;
+    font-weight: 400;
     line-height: 43px;
 
     margin-right: 11px;
@@ -3358,12 +3670,15 @@ input::placeholder
 .basketBuy__orLogin
 {
     font-size: 24px;
-    line-height: 43px;
+    font-weight: 400;
+    line-height: 41px;
 
     color: #5c5c5c;
 }
 .basketBuy__orLogin a
 {
+    position: relative;
+
     margin-left: 11px;
 
     -webkit-transition: .3s ease all;
@@ -3371,6 +3686,19 @@ input::placeholder
             transition: .3s ease all;
 
     color: #0072bb;
+}
+.basketBuy__orLogin a::after
+{
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+
+    width: 100%;
+    height: 1px;
+
+    content: '';
+
+    background: #0072bb;
 }
 .basketBuy__orLogin a:hover
 {
@@ -3396,6 +3724,7 @@ input::placeholder
 .basketBuy__input
 {
     font-size: 20px;
+    font-weight: 400;
     line-height: 23px;
 
     width: 100%;
@@ -3409,6 +3738,7 @@ input::placeholder
 .basketBuy__input::-webkit-input-placeholder
 {
     font-size: 20px;
+    font-weight: 400;
     line-height: 23px;
 
     color: #9d9d9d;
@@ -3416,6 +3746,7 @@ input::placeholder
 .basketBuy__input::-moz-placeholder
 {
     font-size: 20px;
+    font-weight: 400;
     line-height: 23px;
 
     color: #9d9d9d;
@@ -3423,6 +3754,7 @@ input::placeholder
 .basketBuy__input:-ms-input-placeholder
 {
     font-size: 20px;
+    font-weight: 400;
     line-height: 23px;
 
     color: #9d9d9d;
@@ -3430,6 +3762,7 @@ input::placeholder
 .basketBuy__input::-ms-input-placeholder
 {
     font-size: 20px;
+    font-weight: 400;
     line-height: 23px;
 
     color: #9d9d9d;
@@ -3437,6 +3770,7 @@ input::placeholder
 .basketBuy__input::placeholder
 {
     font-size: 20px;
+    font-weight: 400;
     line-height: 23px;
 
     color: #9d9d9d;
@@ -3444,6 +3778,7 @@ input::placeholder
 .basketBuy__placeholder
 {
     font-size: 20px;
+    font-weight: 400;
     line-height: 23px;
 
     position: absolute;
@@ -3484,6 +3819,7 @@ input::placeholder
 .basketBuy__checkbox-text
 {
     font-size: 20px;
+    font-weight: 400;
     line-height: 23px;
 
     color: #9d9d9d;
@@ -3504,6 +3840,7 @@ input::placeholder
 .basketBuy__bottom-button
 {
     font-size: 16px;
+    font-weight: 400;
     line-height: 19px;
 
     height: 100%;
@@ -3565,20 +3902,35 @@ input::placeholder
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: end;
 }
 .basketBuy__price-text
 {
     font-size: 18px;
+    font-weight: 400;
     line-height: 21px;
 
-    margin-right: 20px;
+    margin-right: 11px;
+    margin-bottom: 1px;
 
     color: black;
 }
 .basketBuy__price-price
 {
     font-size: 22px;
+    font-weight: 400;
     line-height: 25px;
+
+    color: #3f3f3f;
+}
+.basketBuy__price-price span
+{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
 
     color: #3f3f3f;
 }
@@ -3664,11 +4016,15 @@ input::placeholder
 .profile__name
 {
     font-size: 18px;
+    font-weight: 400;
     line-height: 13px;
 
     padding: 13px 42px;
 
     cursor: default;
+    -webkit-transition: .3s ease all;
+         -o-transition: .3s ease all;
+            transition: .3s ease all;
 
     color: white;
 }
@@ -3680,6 +4036,10 @@ input::placeholder
 {
     background: #70b852;
 }
+.profile__name.green:hover
+{
+    background: #59983f;
+}
 .profile__name.blue
 {
     background: #0072bb;
@@ -3689,9 +4049,17 @@ input::placeholder
     color: black;
     background: #fecb2b;
 }
+.profile__name.yellow:hover
+{
+    background: #f5ba01;
+}
 .profile__name.pink
 {
     background: #e6007e;
+}
+.profile__name.pink:hover
+{
+    background: #b30062;
 }
 .profile__name-link
 {
@@ -3755,6 +4123,7 @@ input::placeholder
 .profile__box-title
 {
     font-size: 14px;
+    font-weight: 400;
     line-height: 17px;
 
     margin-bottom: 5px;
@@ -3768,6 +4137,7 @@ input::placeholder
 .profile__box-desc
 {
     font-size: 18px;
+    font-weight: 400;
     line-height: 23px;
 
     color: #4c4e4f;
@@ -3816,9 +4186,20 @@ input::placeholder
 .profile__showHis
 {
     font-size: 14px;
+    font-weight: 400;
     line-height: 18px;
 
+    -webkit-transition: .3s ease all;
+         -o-transition: .3s ease all;
+            transition: .3s ease all;
+
     color: #161616;
+}
+.profile__showHis:hover
+{
+    -webkit-transform: translateX(2px);
+        -ms-transform: translateX(2px);
+            transform: translateX(2px);
 }
 .profile__order
 {
@@ -3867,6 +4248,7 @@ input::placeholder
 .profile__order-title
 {
     font-size: 14px;
+    font-weight: 400;
     line-height: 17px;
 
     margin-bottom: 10px;
@@ -3876,6 +4258,7 @@ input::placeholder
 .profile__order-desc
 {
     font-size: 14px;
+    font-weight: 400;
     line-height: 18px;
 
     color: #161616;
@@ -3883,6 +4266,7 @@ input::placeholder
 .profile__order-desc.big
 {
     font-size: 18px;
+    font-weight: 400;
     line-height: 23px;
 
     text-transform: uppercase;
@@ -3939,6 +4323,7 @@ input::placeholder
 .profile__adress-title
 {
     font-size: 10px;
+    font-weight: 400;
     line-height: 12px;
 
     margin-bottom: 10px;
@@ -3948,6 +4333,7 @@ input::placeholder
 .profile__adress-adrs
 {
     font-size: 18px;
+    font-weight: 400;
     line-height: 23px;
 
     color: #4c4e4f;
@@ -3994,6 +4380,7 @@ input::placeholder
 .history__back
 {
     font-size: 14px;
+    font-weight: 400;
     line-height: 18px;
 
     margin-right: 50px;
@@ -4036,6 +4423,7 @@ input::placeholder
 .history__box-title
 {
     font-size: 12px;
+    font-weight: 400;
     line-height: 14px;
 
     margin-bottom: 10px;
@@ -4045,6 +4433,7 @@ input::placeholder
 .history__box-desc
 {
     font-size: 14px;
+    font-weight: 400;
     line-height: 18px;
 
     color: #161616;
@@ -4052,6 +4441,7 @@ input::placeholder
 .history__box-desc.big
 {
     font-size: 18px;
+    font-weight: 400;
     line-height: 23px;
 
     color: #4c4e4f;
@@ -4083,6 +4473,7 @@ input::placeholder
 .history__title
 {
     font-size: 10px;
+    font-weight: 400;
     line-height: 12px;
 
     margin-bottom: 32px;
@@ -4091,19 +4482,42 @@ input::placeholder
 }
 .history .basket__titleBlock-text.name
 {
-    margin-right: 164px;
+    margin-right: 220px;
 }
 .history .basket__titleBlock-text.num
 {
-    margin-right: 145px;
+    margin-right: 104px;
+}
+.history .basket__titleBlock-text.color
+{
+    margin-right: 103px;
 }
 .history .basket__titleBlock-text.raz
 {
-    margin-right: 84px;
+    margin-right: 42px;
 }
 .history .basket__item:last-of-type:last-of-type
 {
     margin-bottom: 0;
+}
+.history .productTop__choiceColor-text
+{
+    margin-top: 1px;
+}
+.history .basket__item-size
+{
+    margin-top: 1px;
+}
+.history .productTop__number-number
+{
+    font-size: 18px;
+    line-height: 21px;
+
+    margin-top: 2px;
+}
+.history .productTop__number
+{
+    margin-right: 24px;
 }
 
 /* Опт */
@@ -4136,6 +4550,11 @@ input::placeholder
 
     grid-template-columns: repeat(3, 1fr);
     gap: 51px;
+}
+.stocks__inner
+{
+    position: relative;
+    z-index: 2;
 }
 .stocks__box
 {
@@ -4188,6 +4607,7 @@ input::placeholder
 .polit__desc
 {
     font-size: 18px;
+    font-weight: 400;
     line-height: 30px;
 
     color: #555;
@@ -4325,6 +4745,7 @@ input::placeholder
 
     width: 68px;
     height: 68px;
+    padding-top: 6px;
 
     -webkit-transition: .3s ease all;
          -o-transition: .3s ease all;
@@ -4344,6 +4765,7 @@ input::placeholder
 .reg__left-box--text
 {
     font-size: 17px;
+    font-weight: 400;
     line-height: 16px;
 
     margin-top: 16px;
@@ -4372,6 +4794,7 @@ input::placeholder
 .reg__right-title
 {
     font-size: 32px;
+    font-weight: 400;
     line-height: 37px;
 
     margin-bottom: 22px;
@@ -4385,6 +4808,7 @@ input::placeholder
 .reg__right-thanks
 {
     font-size: 12px;
+    font-weight: 400;
     line-height: 18px;
 
     margin-bottom: 75px;
@@ -4394,6 +4818,7 @@ input::placeholder
 .reg__right-desc
 {
     font-size: 15px;
+    font-weight: 400;
     line-height: 15px;
 
     margin-bottom: 25px;
@@ -4440,8 +4865,8 @@ input::placeholder
 {
     position: relative;
 
-    width: 203px;
-    height: 284px;
+    width: 227px;
+    height: 338px;
     padding: 5px;
 
     cursor: pointer;
@@ -4463,6 +4888,7 @@ input::placeholder
 .reg__choiceType-text
 {
     font-size: 20px;
+    font-weight: 400;
     line-height: 23px;
 
     position: absolute;
@@ -4478,8 +4904,10 @@ input::placeholder
 .reg__but
 {
     font-size: 16px;
+    font-weight: 400;
     line-height: 19px;
 
+    width: 227px;
     min-width: 203px;
     padding: 13px 11px 11px;
 
@@ -4517,6 +4945,7 @@ input::placeholder
 .reg__input
 {
     font-size: 16px;
+    font-weight: 400;
     line-height: 16px;
 
     width: 493px;
@@ -4527,6 +4956,7 @@ input::placeholder
 .reg__input::-webkit-input-placeholder
 {
     font-size: 16px;
+    font-weight: 400;
     line-height: 16px;
 
     color: #8e8e8e;
@@ -4534,6 +4964,7 @@ input::placeholder
 .reg__input::-moz-placeholder
 {
     font-size: 16px;
+    font-weight: 400;
     line-height: 16px;
 
     color: #8e8e8e;
@@ -4541,6 +4972,7 @@ input::placeholder
 .reg__input:-ms-input-placeholder
 {
     font-size: 16px;
+    font-weight: 400;
     line-height: 16px;
 
     color: #8e8e8e;
@@ -4548,6 +4980,7 @@ input::placeholder
 .reg__input::-ms-input-placeholder
 {
     font-size: 16px;
+    font-weight: 400;
     line-height: 16px;
 
     color: #8e8e8e;
@@ -4555,6 +4988,7 @@ input::placeholder
 .reg__input::placeholder
 {
     font-size: 16px;
+    font-weight: 400;
     line-height: 16px;
 
     color: #8e8e8e;
@@ -4588,6 +5022,8 @@ input::placeholder
 .reg__input-wrapper .error
 {
     display: none;
+
+    margin-top: 2px;
 }
 .reg__input-wrapper.error .error
 {
@@ -4623,6 +5059,7 @@ input::placeholder
 .reg__input-error
 {
     font-size: 10px;
+    font-weight: 400;
     line-height: 15px;
 
     margin-top: 4px;
@@ -4633,6 +5070,7 @@ input::placeholder
 .reg__success
 {
     font-size: 12px;
+    font-weight: 400;
     line-height: 18px;
 
     margin-bottom: 45px;
@@ -4679,8 +5117,11 @@ a.reg__but.blue:hover
 {
     position: absolute;
     z-index: 5;
-    bottom: -7px;
+    bottom: 0;
     left: 0;
+
+    width: 547px;
+    height: auto;
 }
 .footer__line2
 {
@@ -4693,8 +5134,6 @@ a.reg__but.blue:hover
 {
     position: relative;
     z-index: 2;
-
-    margin-bottom: 36px;
 }
 .footer__top-background
 {
@@ -4713,7 +5152,12 @@ a.reg__but.blue:hover
     display: -ms-flexbox;
     display: flex;
 
-    padding-top: 100px;
+    margin-right: 94px;
+    padding-top: 165px;
+
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 .footer__top-column
 {
@@ -4728,14 +5172,6 @@ a.reg__but.blue:hover
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: start;
-}
-.footer__top-column:not(:last-of-type)
-{
-    margin-right: 66px;
-}
-.footer__top-column:first-of-type
-{
-    margin-right: 92px;
 }
 .footer__top-button
 {
@@ -4763,6 +5199,7 @@ a.reg__but.blue:hover
 .footer__top-button--title
 {
     font-size: 14px;
+    font-weight: 400;
     line-height: 16px;
 
     margin-top: 3px;
@@ -4779,6 +5216,7 @@ a.reg__but.blue:hover
 .footer__top-link
 {
     font-size: 14px;
+    font-weight: 400;
     line-height: normal;
 
     position: relative;
@@ -4851,6 +5289,7 @@ a.reg__but.blue:hover
 {
     font-family: 'FuturaBookC';
     font-size: 16px;
+    font-weight: 400;
     line-height: 18px;
 
     margin-bottom: 30px;
@@ -4876,6 +5315,7 @@ a.reg__but.blue:hover
 .footer__bottom-phone
 {
     font-size: 22px;
+    font-weight: 400;
     line-height: 22px;
 
     color: white;
@@ -4884,6 +5324,7 @@ a.reg__but.blue:hover
 {
     font-family: 'FuturaBookC';
     font-size: 14px;
+    font-weight: 400;
     line-height: 16px;
 
     margin-top: 10px;
@@ -4900,6 +5341,7 @@ a.reg__but.blue:hover
 .footer__bottom-email
 {
     font-size: 20px;
+    font-weight: 400;
     line-height: 22px;
 
     color: white;
@@ -4933,6 +5375,7 @@ a.reg__but.blue:hover
 .footer__bottom-adress
 {
     font-size: 16px;
+    font-weight: 400;
     line-height: 28px;
 
     margin-top: 44px;
@@ -4947,6 +5390,7 @@ a.reg__but.blue:hover
 {
     font-family: 'FuturaBookC';
     font-size: 12px;
+    font-weight: 400;
     line-height: 13px;
 
     padding-bottom: 20px;
@@ -4963,12 +5407,30 @@ a.reg__but.blue:hover
     {
         bottom: 0;
     }
+    .choice__top
+    {
+        top: 25px;
+    }
+    .choice__third
+    {
+        top: 187px;
+    }
+    .choice__first
+    {
+        top: 30px;
+
+        height: auto;
+    }
 }
 @media (max-width: 1280px)
 {
     .footer__top
     {
         margin-bottom: -1px;
+    }
+    .footer__top-background
+    {
+        top: 45px;
     }
 }
 @media (min-width: 961px)
@@ -5027,6 +5489,7 @@ a.reg__but.blue:hover
     .productItem__title
     {
         font-size: 11px;
+        font-weight: 400;
         line-height: 13px;
 
         color: #3e3e3e;
@@ -5110,7 +5573,7 @@ a.reg__but.blue:hover
     {
         padding-right: 10px;
     }
-    .header__top-left ul
+    .header__top-left
     {
         display: none;
     }
@@ -5142,6 +5605,13 @@ a.reg__but.blue:hover
     .header__search
     {
         margin-bottom: 56px;
+    }
+    .header__basket-number
+    {
+        line-height: auto;
+
+        min-width: 10px;
+        min-height: 10px;
     }
     .header__menu
     {
@@ -5187,6 +5657,7 @@ a.reg__but.blue:hover
     .header__menu-link
     {
         font-size: 18px;
+        font-weight: 400;
         line-height: 23px;
 
         color: #4c4e4f;
@@ -5210,6 +5681,7 @@ a.reg__but.blue:hover
     .header__menu-button
     {
         font-size: 18px;
+        font-weight: 400;
         line-height: 23px;
 
         display: -webkit-box;
@@ -5253,7 +5725,7 @@ a.reg__but.blue:hover
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
     }
-    .header__menu-btn.active
+    .header__menu-btn.active div
     {
         width: 30px;
     }
@@ -5329,6 +5801,7 @@ a.reg__but.blue:hover
     .header__categories-link
     {
         font-size: 18px;
+        font-weight: 400;
         line-height: 23px;
 
         -webkit-transition: .3s ease all;
@@ -5448,6 +5921,7 @@ a.reg__but.blue:hover
     .notJust__item-text
     {
         font-size: 20px;
+        font-weight: 400;
         line-height: 28px;
 
         margin-left: 36px;
@@ -5456,8 +5930,12 @@ a.reg__but.blue:hover
     }
     .notJust__item-icon
     {
+        width: 67px;
         height: 100%;
         margin-bottom: 0;
+
+        -o-object-fit: contain;
+           object-fit: contain;
     }
     .choice__inner
     {
@@ -5479,6 +5957,11 @@ a.reg__but.blue:hover
     .collection svg
     {
         display: none;
+    }
+    .collection__img
+    {
+        position: relative;
+        top: 4px;
     }
     .collection__inner
     {
@@ -5502,6 +5985,7 @@ a.reg__but.blue:hover
     .collection__desc
     {
         font-size: 12px;
+        font-weight: 400;
         line-height: 19px;
 
         width: 100%;
@@ -5529,6 +6013,7 @@ a.reg__but.blue:hover
     .collection__title.light
     {
         font-size: 55px;
+        font-weight: 400;
         line-height: 51px;
 
         color: white;
@@ -5585,6 +6070,10 @@ a.reg__but.blue:hover
         max-width: none;
         margin-right: 0;
         margin-bottom: 39px;
+    }
+    .map__left *
+    {
+        width: 100%;
     }
     .map__box:not(:last-of-type)
     {
@@ -5815,6 +6304,7 @@ a.reg__but.blue:hover
     {
         font-family: 'FuturaBookC';
         font-size: 12px;
+        font-weight: 400;
 
         margin-bottom: 22px;
 
@@ -5842,6 +6332,7 @@ a.reg__but.blue:hover
     {
         font-family: 'Inter';
         font-size: 10px;
+        font-weight: 400;
         line-height: 13px;
 
         margin-bottom: 11px;
@@ -5852,6 +6343,7 @@ a.reg__but.blue:hover
     {
         font-family: 'FuturaBookC';
         font-size: 14px;
+        font-weight: 400;
         line-height: 18px;
 
         color: #4c4e4f;
@@ -5860,6 +6352,7 @@ a.reg__but.blue:hover
     {
         font-family: 'Inter';
         font-size: 10px;
+        font-weight: 400;
         line-height: 13px;
 
         color: #bbb;
@@ -5954,6 +6447,18 @@ a.reg__but.blue:hover
     .profile__name
     {
         padding: 13px 31px;
+    }
+    .profile__adress:last-of-type .profile__adress-right::after
+    {
+        width: 0;
+
+        content: '';
+    }
+    .profile__order:last-of-type::after
+    {
+        width: 0;
+
+        content: '';
     }
     .profile__profile
     {
@@ -6059,6 +6564,7 @@ a.reg__but.blue:hover
     .history__topMobile-text
     {
         font-size: 14px;
+        font-weight: 400;
         line-height: 18px;
 
         margin-left: 25px;
@@ -6249,6 +6755,8 @@ a.reg__but.blue:hover
     {
             flex-direction: column;
 
+        margin-right: 0;
+
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -6259,13 +6767,12 @@ a.reg__but.blue:hover
     .footer__top-background
     {
         top: 30px;
-        right: 0;
 
         width: auto;
 
-        -webkit-transform: translateX(-50%);
-            -ms-transform: translateX(-50%);
-                transform: translateX(-50%);
+        -webkit-transform: translateX(-55%);
+            -ms-transform: translateX(-55%);
+                transform: translateX(-55%);
     }
     .footer__top-column
     {
@@ -6290,6 +6797,7 @@ a.reg__but.blue:hover
     .footer__top-link
     {
         font-size: 20px;
+        font-weight: 400;
         line-height: 23px;
 
         color: white;
