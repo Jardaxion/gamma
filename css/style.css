@@ -3883,6 +3883,14 @@ input::placeholder
 {
     margin-right: 21px;
 }
+.basketBuy__bottom-button.not
+{
+    margin-right: 0;
+}
+.basketBuy__bottom.mb
+{
+    margin: 35px 0 60px;
+}
 .basketBuy__bottom-left
 {
     display: -webkit-box;
@@ -3892,10 +3900,6 @@ input::placeholder
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-}
-.basketBuy__bottom-left.mb
-{
-    margin: 35px 0 60px;
 }
 .basketBuy__bottom-right
 {
